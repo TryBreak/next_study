@@ -1,28 +1,22 @@
 {
-  "name": "next_study",
-  "version": "1.0.0",
-  "description": "next 框架的学习",
-  "keywords": [
-    "学习",
-    "react",
-    "next",
-    "js"
-  ],
-  "license": "ISC",
-  "author": "meichangliang",
+  "name": "nextgram",
+  "private": true,
+  "dependencies": {
+    "next": "^2.0.0-beta",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "7.0.0",
+    "standard": "8.4.0"
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  },
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "next": "^8.0.1",
-    "react": "^16.8.1",
-    "react-dom": "^16.8.1"
-  },
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/private-study/next_study.git"
+    "start": "NODE_ENV=production next start",
+    "lint": "standard"
   }
 }
