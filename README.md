@@ -1,2 +1,7 @@
-# next_status
-前后端同构服务,next
+# next_study
+
+next 框架的学习
+
+文档地址
+
+http://nextjs.frontendx.cn/
