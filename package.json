@@ -1,22 +1,23 @@
 {
-  "name": "nextgram",
-  "private": true,
-  "dependencies": {
-    "next": "^2.0.0-beta",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1"
-  },
-  "devDependencies": {
-    "babel-eslint": "7.0.0",
-    "standard": "8.4.0"
-  },
-  "standard": {
-    "parser": "babel-eslint"
-  },
+  "name": "next_study",
+  "version": "1.0.0",
+  "description": "next 框架demo",
+  "author": "meichangliang",
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "NODE_ENV=production next start",
-    "lint": "standard"
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "^8.0.1",
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "10.0.1",
+    "standard": "12.0.1"
+  },
+  "standard": {
+    "parser": "babel-eslint"
   }
 }
