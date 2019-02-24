@@ -1,5 +1,9 @@
 # next 项目搭建过程
 
+学习进度
+
+<http://nextjs.frontendx.cn/docs/#高阶组件>
+
 ## 项目搭建过程
 
 1. 生成文件 .gitignore
