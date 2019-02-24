@@ -2,8 +2,9 @@ import React from "react";
 // import Router from "next/router";
 import less from "./index.less";
 import "./index.less";
+import Hello from "./hello";
 
-const index = class extends React.Component {
+const Index = class extends React.Component {
   render() {
     const style1 = {
       padding: "10px",
@@ -11,6 +12,7 @@ const index = class extends React.Component {
     };
     return (
       <>
+        <Hello />
         <style jsx>{`
           .h1 {
             color: red;
@@ -37,4 +39,4 @@ const index = class extends React.Component {
   }
 };
 
-export default index;
+export default Index;
