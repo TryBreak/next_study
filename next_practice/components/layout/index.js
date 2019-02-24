@@ -17,8 +17,8 @@ const Layout = class extends React.Component {
           <title>{title}</title>
           {/* <meta charset="utf-8" /> 这个默认会存在 */}
           <meta name="renderer" content="webkit" />
-          <meta http-equiv="Cache-Control" content="no-siteapp" />
-          <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+          <meta httpEquiv="Cache-Control" content="no-siteapp" />
+          <meta httpEquiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
           <meta name="viewport" content="width=width=device-width" />
           <meta name="apple-mobile-web-app-capable" content="yes" />
           <meta name="apple-mobile-web-app-status-bar-style" content="black" />
