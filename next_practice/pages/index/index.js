@@ -2,7 +2,7 @@ import React from "react";
 // import Router from "next/router";
 import less from "./index.less";
 import "./index.less";
-import Hello from "./hello";
+import Hello from "./hello/index.js";
 
 const Index = class extends React.Component {
   render() {
