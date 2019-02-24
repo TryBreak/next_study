@@ -1,5 +1,7 @@
 import React from "react";
-import Router from "next/router";
+// import Router from "next/router";
+import less from "../static/less/styles.less";
+import "../static/less/styles.less";
 
 const index = class extends React.Component {
   render() {
@@ -21,12 +23,10 @@ const index = class extends React.Component {
         <div
           style={{ ...style1, color: "green", "background-color": "yellow" }}
         >
-          Welcome to next.js! 这里是第一个next 页面,这里是 {`style`} 渲染的样式
+          这里是 {`style`} 渲染的样式
         </div>
-        <div style={style1}>
-          Welcome to next.js! 这里是第一个next 页面,这里是 style变量渲染
-          渲染的样式
-        </div>
+        <div style={style1}>这里是 style变量渲染 渲染的样式</div>
+        <div className={less.less_style}>这里是 less import less from 渲染</div>
       </>
     );
   }

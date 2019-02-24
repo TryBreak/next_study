@@ -26,6 +26,20 @@ sudo npm install --save @zeit/next-less less
 
 ```
 
+创建文件
+next.config.js
+
+```js
+const withLess = require("@zeit/next-less");
+module.exports = withLess({
+  cssModules: true,
+  cssLoaderOptions: {
+    importLoaders: 1,
+    localIdentName: "[local]___[hash:base64:5]"
+  }
+});
+```
+
 ## 构建添加 ESlint
 
 ## 构建添加 TypeScript
