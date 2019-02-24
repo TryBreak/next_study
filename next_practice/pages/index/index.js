@@ -1,7 +1,7 @@
 import React from "react";
 // import Router from "next/router";
-import less from "../static/less/styles.less";
-import "../static/less/styles.less";
+import less from "./index.less";
+import "./index.less";
 
 const index = class extends React.Component {
   render() {
