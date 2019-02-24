@@ -27,6 +27,7 @@ const index = class extends React.Component {
         </div>
         <div style={style1}>这里是 style变量渲染 渲染的样式</div>
         <div className={less.less_style}>这里是 less import less from 渲染</div>
+        <img src="../static/image/pa.jpg" alt="my image" />
       </>
     );
   }

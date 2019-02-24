@@ -40,6 +40,8 @@ module.exports = withLess({
 });
 ```
 
+## 静态文件服务
+
 ## 构建添加 ESlint
 
 ## 构建添加 TypeScript
