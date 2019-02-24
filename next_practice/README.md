@@ -19,6 +19,13 @@
 
 ## 构建和添加 less
 
+<https://github.com/zeit/next-plugins/tree/master/packages/next-less>
+
+```bash
+sudo npm install --save @zeit/next-less less
+
+```
+
 ## 构建添加 ESlint
 
 ## 构建添加 TypeScript
