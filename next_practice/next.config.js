@@ -4,5 +4,9 @@ module.exports = withLess({
   cssLoaderOptions: {
     importLoaders: 1,
     localIdentName: "[local]___[hash:base64:5]"
+  },
+  webpack(config, options) {
+    // Further custom configuration here
+    return config;
   }
 });

@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Head from "next/head";
 import PropTypes from "prop-types";
+import "../../static/less/common.less";
 const Layout = class extends React.Component {
   static defaultProps = {
     title: "This is a title"
@@ -46,7 +47,7 @@ const Layout = class extends React.Component {
           </nav>
         </header>
         {children}
-        <footer>{"I`m here to stay"}</footer>
+        <footer>{"I`m here to stay,这里是footer"}</footer>
       </div>
     );
   }

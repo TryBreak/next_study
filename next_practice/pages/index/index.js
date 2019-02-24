@@ -1,8 +1,9 @@
 import React from "react";
-// import Router from "next/router";
+import Link from "next/link";
 import less from "./index.less";
 import "./index.less";
 import Hello from "./hello/index.js";
+import Router from "next/router";
 
 import Layout from "../../components/layout";
 
@@ -20,6 +21,39 @@ const Index = class extends React.Component {
     const userAgent = req ? req.headers["user-agent"] : navigator.userAgent;
     return { userAgent };
   }
+  shallowRouter = () => {
+    const href = "/?counter=10";
+    const as = href;
+    Router.push(href, as, { shallow: true });
+  };
+  componentDidUpdate(prevProps) {
+    console.log("路有变化了");
+    console.log(this.props);
+
+    // const { pathname, query } = this.props.router;
+    // console.log(pathname);
+    // console.log(query);
+    // console.log(prevProps);
+    // verify props have changed to avoid an infinite loop
+    // if (query.id !== prevProps.router.query.id) {
+    //   // fetch data based on the new query
+    // }
+  }
+  linkToRouter = () => {
+    //点击监听
+    const handleRouteChange = url => {
+      console.log("App is changing to: ", url);
+    };
+    Router.events.on("routeChangeStart", handleRouteChange);
+    //不利于seo
+    Router.push({
+      pathname: "/about",
+      query: {
+        name: 123,
+        age: 24
+      }
+    });
+  };
   render() {
     const style1 = {
       padding: "10px",
@@ -48,6 +82,31 @@ const Index = class extends React.Component {
           src="../static/image/pa.jpg"
           alt="my image"
         />
+        <Link
+          href={{ pathname: "/about", query: { name: "Zeit" } }}
+          replace
+          scroll={false}
+        >
+          <a target="_blank" className="link">
+            a标签的跳转,利于SEO
+          </a>
+        </Link>
+        ,
+        <span
+          className="link"
+          style={{ color: "blue", cursor: "pointer" }}
+          onClick={this.linkToRouter}
+        >
+          编程式导航
+        </span>
+        ,
+        <span
+          className="link"
+          style={{ color: "blue", cursor: "pointer" }}
+          onClick={this.shallowRouter}
+        >
+          浅层路由允许你改变 URL 但是不执行getInitialProps生命周期
+        </span>
       </Layout>
     );
   }
