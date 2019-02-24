@@ -1,0 +1,19 @@
+{
+  "name": "next_status",
+  "version": "1.0.0",
+  "description": "next的练习项目",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "keywords": [
+    "nuxt练习"
+  ],
+  "author": "Mark",
+  "dependencies": {
+    "next": "^8.0.3",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3"
+  }
+}
