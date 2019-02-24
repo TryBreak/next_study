@@ -40,8 +40,6 @@ module.exports = withLess({
 });
 ```
 
-## 设置头元素
-
 ## 静态文件服务
 
 ## 构建添加 ESlint

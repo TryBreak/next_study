@@ -4,6 +4,8 @@ import less from "./index.less";
 import "./index.less";
 import Hello from "./hello/index.js";
 
+import Layout from "../../components/layout";
+
 const Index = class extends React.Component {
   render() {
     const style1 = {
@@ -11,7 +13,7 @@ const Index = class extends React.Component {
       "background-color": "red"
     };
     return (
-      <>
+      <Layout title="覆盖一下,也可以不传值">
         <Hello />
         <style jsx>{`
           .h1 {
@@ -34,7 +36,7 @@ const Index = class extends React.Component {
           src="../static/image/pa.jpg"
           alt="my image"
         />
-      </>
+      </Layout>
     );
   }
 };
