@@ -26,6 +26,11 @@ const Index = class extends React.Component {
     const as = href;
     Router.push(href, as, { shallow: true });
   };
+  componentDidMount() {
+    console.log(11111111111111);
+    console.log("componentDidMount");
+    console.log(11111111111111);
+  }
   componentDidUpdate(prevProps) {
     console.log("路有变化了");
     console.log(this.props);
