@@ -3,6 +3,7 @@ import Link from "next/link";
 import Head from "next/head";
 import PropTypes from "prop-types";
 import "../../static/less/common.less";
+import ActiveLink from "../ActiveLink";
 const Layout = class extends React.Component {
   static defaultProps = {
     title: "This is a title"
@@ -32,6 +33,9 @@ const Layout = class extends React.Component {
           <link rel="shortcut icon" href="../../static/image/favicon.ico" />
         </Head>
         <header>
+          <ActiveLink href="/">Home</ActiveLink>
+          <ActiveLink href="/about">About</ActiveLink>
+          <ActiveLink href="/error">Error</ActiveLink>
           <nav>
             <Link href="/">
               <a>Home</a>

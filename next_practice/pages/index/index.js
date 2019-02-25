@@ -5,7 +5,7 @@ import "./index.less";
 import Hello from "./hello/index.js";
 import Router from "next/router";
 
-import Layout from "../../components/layout";
+import Layout from "../../components/Layout";
 
 const Index = class extends React.Component {
   static async getInitialProps({ req }) {
